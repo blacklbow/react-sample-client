@@ -15,7 +15,20 @@ pnpm:10.11.0
 npm create vite@latest
 ```
 
+#### index.htmlをsrc配下に移動
+
+vite.confing.tsに追記
+
+```ts
+  root: './src',
+```
+参照を修正
+index.html
+App.tsx...etc
+
 ### tailwindcss
+
+> https://nerdcave.com/tailwind-cheat-sheet
 
 ```sh
 pnpm install tailwindcss @tailwindcss/vite
@@ -39,3 +52,4 @@ index.cssの編集(下記以外は削除する)
 ```css
 @import "tailwindcss";
 ```
+
